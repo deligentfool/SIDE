@@ -50,7 +50,7 @@ class SIDELearner:
         mask = batch["filled"][:, :-1].float()
         mask[:, 1:] = mask[:, 1:] * (1 - terminated[:, :-1])
         vae_mask = batch["filled"].float()
-        prior_vae_mask = th.cat([th.zeros_like(vae_mask[:, 0]).unsqueeze(1), vae_mask[:, :-1]], dim=1)
+        prior_vae_mask = th.cat([th.ones_like(vae_mask[:, 0]).unsqueeze(1), vae_mask[:, :-1]], dim=1)
         avail_actions = batch["avail_actions"]
         past_onehot_action = th.cat([th.zeros_like(batch["actions_onehot"][:, 0]).unsqueeze(1), batch["actions_onehot"][:, :-1]], dim=1)
         #past_reward = th.cat([th.zeros_like(batch["reward"][:, 0]).unsqueeze(1), batch["reward"][:, :-2]], dim=1)
