@@ -1,10 +1,10 @@
-# SIDE: I Infer the State I Want to Learn
+# SIDE: State Inference for Partially Observable Cooperative Multi-Agent Reinforcement Learning
 
 ## Note
 SIDE is  a novel value decomposition framework, named State Inference for value DEcomposition, which eliminates the need to know the true state by simultaneously seeking solutions to the two problems of optimal control and state inference.
 
 The implementation of the following methods can also be found in this codebase, which are finished by the authors of [PyMARL](https://github.com/oxwhirl/pymarl):
-- [**SIDE**: SIDE: I Infer the State I Want to Learn](https://arxiv.org/abs/2105.06228)
+- [**SIDE**: SIDE: State Inference for Partially Observable Cooperative Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2105.06228)
 - [**QMIX**: QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning](https://arxiv.org/abs/1803.11485)
 - [**COMA**: Counterfactual Multi-Agent Policy Gradients](https://arxiv.org/abs/1705.08926)
 - [**VDN**: Value-Decomposition Networks For Cooperative Multi-Agent Learning](https://arxiv.org/abs/1706.05296) 
